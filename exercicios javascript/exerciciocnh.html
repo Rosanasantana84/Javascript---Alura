@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    
+
+    if ( idade >= 18 && temCarteira == "S") {
+        mostra("Pode dirigir!");
+    } else{
+        mostra("Não pode dirigir!");
+    }
+
+    //Observe que temos no código um if dentro de outro, pois para que alguém possa dirigir a pessoa além de precisar ser maior de idade ainda deve possuir uma carteira de motorista. Porém, ser menor de 18 já anula a necessidade de verificar a existência de carteira, pois ele não pode dirigir, a não ser que a carteira seja falsa, não é mesmo? (risos)
+
+    //Contudo, podemos deixar nosso código ainda melhor! No lugar de colocarmos um if dentro de outro, podemos usar um && para indicar um "E" dentro do mesmo if:Podemos melhorar ainda mais o código! Ele pode, por exemplo, só entrar no if se antes as duas condições (ter carteira e ser maior de 18 anos) forem verdadeiras. Nesse caso, só há uma condição oposta a "Poder dirigir" que é "Não dirigir". Portanto, podemos utilizar um else:
+
+    //Veja que nosso código ficou mais enxuto e continua com a mesma funcionalidade!
+
+    //Não se preocupe se sua resposta não foi tão enxuta quanto a minha, se seu programa funcionou, já ganhou 10! É sempre bom ver formas diferentes de se resolver um mesmo problema.
+
+</script>
